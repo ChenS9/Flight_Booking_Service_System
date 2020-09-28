@@ -4,13 +4,14 @@ Objectives:
 *To develop a database application under concurrent access.<br /> 
 *To interface with a relational database from a Java application via JDBC.<br /> 
 
-## Implement create, login, and search<br /> 
+#### Implement create, login, and search<br /> 
+Implement the create, login and search commands
 
-## Implement book, pay, reservations, cancel, and add transactions!<br /> 
-Implement the book, pay , reservations and cancel commands in Query.java.<br /> 
+#### Implement book, pay, reservations, cancel, and add transactions!<br /> 
+Implement the book, pay , reservations and cancel commands.<br /> 
 While implementing & trying out these commands, you'll notice that there are problems when multiple users try to use your service concurrently.<br /> 
 To resolve this challenge, you will need to implement transactions that ensure concurrent commands do not conflict.<br /> 
-## Transaction management
+#### Transaction management
 You must use SQL transactions to guarantee ACID properties: we have set the isolation level for your Connection, and you need to define<br /> 
 begin-transaction and end-transaction statements and insert them in appropriate places in Query.java.<br /> 
 In particular, you must ensure that the following constraints are always satisfied, even if multiple instances of your application talk to the database at the same<br />  time:
