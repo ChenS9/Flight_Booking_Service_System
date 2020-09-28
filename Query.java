@@ -16,8 +16,8 @@ public class Query {
     private Connection conn;
 
     // Password hashing parameter constants
-    private static final int HASH_STRENGTH = 65536;
-    private static final int KEY_LENGTH = 128;
+    private static final int HASH_STRENGTH = ...;
+    private static final int KEY_LENGTH = ...;
 
     // Canned queries
     private static final String CHECK_FLIGHT_CAPACITY = "SELECT capacity FROM Flightcapacity WHERE fid = ?";
@@ -65,11 +65,11 @@ public class Query {
     public static Connection openConnectionFromDbConn() throws SQLException, IOException {
         // Connect to the database with the provided connection configuration
         Properties configProps = new Properties();
-        configProps.load(new FileInputStream("dbconn.properties"));
-        String serverURL = configProps.getProperty("hw5.server_url");
-        String dbName = configProps.getProperty("hw5.database_name");
-        String adminName = configProps.getProperty("hw5.username");
-        String password = configProps.getProperty("hw5.password");
+        configProps.load(new FileInputStream("...properties"));
+        String serverURL = configProps.getProperty("...server_url");
+        String dbName = configProps.getProperty("...database_name");
+        String adminName = configProps.getProperty("...username");
+        String password = configProps.getProperty("...password");
         return openConnectionFromCredential(serverURL, dbName, adminName, password);
     }
 
